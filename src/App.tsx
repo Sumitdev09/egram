@@ -18,6 +18,7 @@ import AdminCertificates from "./pages/admin/Certificates";
 import AdminPropertyTax from "./pages/admin/PropertyTax";
 import AdminGrievances from "./pages/admin/Grievances";
 import AdminAnnouncements from "./pages/admin/Announcements";
+import AdminUsers from "./pages/admin/Users";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -117,6 +118,14 @@ const App = () => (
             element={
               <AuthGuard>
                 <AdminAnnouncements />
+              </AuthGuard>
+            }
+          />
+          <Route
+            path="/admin/users"
+            element={
+              <AuthGuard>
+                <AdminUsers />
               </AuthGuard>
             }
           />

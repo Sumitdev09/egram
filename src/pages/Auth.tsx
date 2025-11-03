@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
-import { Building2 } from "lucide-react";
+import { Building2, Home } from "lucide-react";
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -147,13 +147,25 @@ const Auth = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/30 to-background flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="flex justify-center mb-4">
-            <div className="p-3 bg-primary rounded-lg">
-              <Building2 className="h-8 w-8 text-primary-foreground" />
+          <div className="flex justify-between items-start mb-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => navigate("/")}
+              className="flex items-center gap-2"
+            >
+              <Home className="h-4 w-4" />
+              Home
+            </Button>
+            <div className="flex-1 flex justify-center">
+              <div className="p-3 bg-primary rounded-lg">
+                <Building2 className="h-8 w-8 text-primary-foreground" />
+              </div>
             </div>
+            <div className="w-20"></div>
           </div>
-          <CardTitle className="text-2xl">E-Grampanchayat Portal</CardTitle>
-          <CardDescription>Digital governance for citizens</CardDescription>
+          <CardTitle className="text-2xl">Citizen Portal</CardTitle>
+          <CardDescription>Sign in or create a new account</CardDescription>
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="login" className="w-full">
@@ -236,6 +248,9 @@ const Auth = () => {
           </Tabs>
         </CardContent>
       </Card>
+      <div className="fixed bottom-4 left-0 right-0 text-center">
+        <p className="text-sm text-primary font-medium">Made with ❤️ by Sumit Yadav</p>
+      </div>
     </div>
   );
 };

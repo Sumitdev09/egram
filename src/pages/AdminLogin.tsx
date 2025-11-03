@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Shield } from "lucide-react";
+import { Shield, Home } from "lucide-react";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -84,10 +84,22 @@ const AdminLogin = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/30 to-background flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="flex justify-center mb-4">
-            <div className="p-3 bg-destructive rounded-lg">
-              <Shield className="h-8 w-8 text-destructive-foreground" />
+          <div className="flex justify-between items-start mb-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => navigate("/")}
+              className="flex items-center gap-2"
+            >
+              <Home className="h-4 w-4" />
+              Home
+            </Button>
+            <div className="flex-1 flex justify-center">
+              <div className="p-3 bg-destructive rounded-lg">
+                <Shield className="h-8 w-8 text-destructive-foreground" />
+              </div>
             </div>
+            <div className="w-20"></div>
           </div>
           <CardTitle className="text-2xl">Admin Portal</CardTitle>
           <CardDescription>Administrative access only</CardDescription>
@@ -132,6 +144,9 @@ const AdminLogin = () => {
           </form>
         </CardContent>
       </Card>
+      <div className="fixed bottom-4 left-0 right-0 text-center">
+        <p className="text-sm text-primary font-medium">Made with ❤️ by Sumit Yadav</p>
+      </div>
     </div>
   );
 };

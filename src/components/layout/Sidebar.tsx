@@ -7,6 +7,7 @@ import {
   Bell,
   Settings,
   Shield,
+  Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
@@ -22,6 +23,7 @@ const citizenNavItems = [
 
 const adminNavItems = [
   { icon: LayoutDashboard, label: "Dashboard", path: "/admin" },
+  { icon: Users, label: "Users", path: "/admin/users" },
   { icon: FileText, label: "Certificates", path: "/admin/certificates" },
   { icon: DollarSign, label: "Property Tax", path: "/admin/property-tax" },
   { icon: MessageSquare, label: "Grievances", path: "/admin/grievances" },
