@@ -1,149 +1,74 @@
-# E-Grampanchayat - Digital Governance Portal# Welcome to your Lovable project
+# E-Grampanchayat - Digital Governance Portal
 
-
-
-<div align="center">## Project info
-
+<div align="center">
   <img src="./public/placeholder.svg" alt="E-Grampanchayat Logo" width="200"/>
 
-  **URL**: https://lovable.dev/projects/4c4217c0-3ec6-4e07-a5af-fa1151c33620
-
   [![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
-
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)## How can I edit this code?
-
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
   [![Vite](https://img.shields.io/badge/Vite-5+-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
-
-  [![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.com/)There are several ways of editing your application.
-
+  [![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.com/)
   [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3+-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-</div>**Use Lovable**
+</div>
 
+---
 
+## 📋 Table of Contents
 
----Simply visit the [Lovable Project](https://lovable.dev/projects/4c4217c0-3ec6-4e07-a5af-fa1151c33620) and start prompting.
-
-
-
-## 📋 Table of ContentsChanges made via Lovable will be committed automatically to this repo.
-
-
-
-- [About the Project](#about-the-project)**Use your preferred IDE**
-
+- [About the Project](#about-the-project)
 - [Features](#features)
-
-- [Tech Stack](#tech-stack)If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
+- [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-
-- [Getting Started](#getting-started)The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-
-  - [Installation](#installation)Follow these steps:
-
+  - [Installation](#installation)
   - [Running the Project](#running-the-project)
-
-- [Admin Setup](#admin-setup)```sh
-
-- [Database Migrations](#database-migrations)# Step 1: Clone the repository using the project's Git URL.
-
-- [Environment Variables](#environment-variables)git clone <YOUR_GIT_URL>
-
+- [Admin Setup](#admin-setup)
+- [Database Migrations](#database-migrations)
+- [Environment Variables](#environment-variables)
 - [Available Scripts](#available-scripts)
-
-- [Deployment](#deployment)# Step 2: Navigate to the project directory.
-
-- [Documentation](#documentation)cd <YOUR_PROJECT_NAME>
-
+- [Deployment](#deployment)
+- [Documentation](#documentation)
 - [Contributing](#contributing)
 
-# Step 3: Install the necessary dependencies.
+---
 
----npm i
+## 🎯 About the Project
 
+**E-Grampanchayat** is a comprehensive digital governance platform designed to simplify village administration and citizen services. The platform bridges the gap between rural governance and modern technology, enabling:
 
-
-## 🎯 About the Project# Step 4: Start the development server with auto-reloading and an instant preview.
-
-npm run dev
-
-**E-Grampanchayat** is a comprehensive digital governance platform designed to simplify village administration and citizen services. The platform bridges the gap between rural governance and modern technology, enabling:```
-
-
-
-- **Citizens** to access government services digitally**Edit a file directly in GitHub**
-
+- **Citizens** to access government services digitally
 - **Village Administrators** to manage services efficiently
+- **Transparent** and **accountable** governance through digital records
 
-- **Transparent** and **accountable** governance through digital records- Navigate to the desired file(s).
+### Key Objectives
 
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-
-### Key Objectives- Make your changes and commit the changes.
-
-
-
-✅ Digitize village governance processes  **Use GitHub Codespaces**
-
+✅ Digitize village governance processes  
 ✅ Provide 24/7 access to government services  
+✅ Reduce paperwork and manual processing  
+✅ Improve transparency and accountability  
+✅ Enable data-driven decision making  
+## ✨ Features
 
-✅ Reduce paperwork and manual processing  - Navigate to the main page of your repository.
+### 👥 Citizen Portal
 
-✅ Improve transparency and accountability  - Click on the "Code" button (green button) near the top right.
-
-✅ Enable data-driven decision making  - Select the "Codespaces" tab.
-
-- Click on "New codespace" to launch a new Codespace environment.
-
----- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-
-
-## ✨ Features## What technologies are used for this project?
-
-
-
-### 👥 Citizen PortalThis project is built with:
-
-
-
-- **🆔 Certificate Services**- Vite
-
-  - Birth certificates- TypeScript
-
-  - Death certificates- React
-
-  - Income certificates- shadcn-ui
-
-  - Caste certificates- Tailwind CSS
-
+- **🆔 Certificate Services**
+  - Birth certificates
+  - Death certificates
+  - Income certificates
+  - Caste certificates
   - Residence certificates
+  - Track application status
 
-  - Track application status## How can I deploy this project?
-
-
-
-- **💰 Property Tax Management**Simply open [Lovable](https://lovable.dev/projects/4c4217c0-3ec6-4e07-a5af-fa1151c33620) and click on Share -> Publish.
-
+- **💰 Property Tax Management**
   - View property tax details
-
-  - Online payment integration## Can I connect a custom domain to my Lovable project?
-
+  - Online payment integration
   - Payment history
+  - Download receipts
 
-  - Download receiptsYes, you can!
-
-
-
-- **📢 Grievance Management**To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
+- **📢 Grievance Management**
   - File complaints online
-
-  - Track grievance statusRead more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-
+  - Track grievance status
   - Receive updates
   - View resolution history
 
@@ -165,13 +90,20 @@ npm run dev
   - Service overview
   - Performance metrics
 
-- **📝 Certificate Management**
+- **� User Management**
+  - View all registered users
+  - User details and roles
+  - Account management
+
+- **�📝 Certificate Management**
   - Review applications
   - Approve/reject certificates
+  - Generate certificate documents
   - Download/print certificates
 
 - **💳 Tax Administration**
-  - Manage property records
+  - Add tax records
+  - Manage property details
   - Tax collection tracking
   - Generate reports
 
