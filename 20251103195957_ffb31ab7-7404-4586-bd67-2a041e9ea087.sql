@@ -1,0 +1,20 @@
+-- Fix security issues from previous migration
+
+-- Drop the insecure view that exposes auth.users
+DROP VIEW IF EXISTS public.admin_users;
+
+-- Instead, create a secure function to check if current user is admin
+CREATE OR REPLACE FUNCTION public.is_current_user_admin()
+RETURNS boolean
+LANGUAGE sql
+STABLE
+SECURITY DEFINER
+SET search_path = public
+AS $$
+  SELECT EXISTS (
+    SELECT 1
+    FROM public.user_roles
+    WHERE user_id = auth.uid()
+      AND role = 'admin'
+  )
+$$;
